@@ -1,7 +1,21 @@
 import streamlit as st
 
-st.set_page_config(page_title="Chat App", layout="centered")
-
+# Inject CSS to make the title sticky
+st.markdown("""
+    <style>
+    .sticky-title {
+        position: sticky;
+        top: 0;
+        background-color: white;
+        padding: 1rem 0;
+        z-index: 999;
+        border-bottom: 1px solid #eee;
+    }
+    </style>
+    <div class="sticky-title">
+        <h1>💬 My Chatbot</h1>
+    </div>
+""", unsafe_allow_html=True)
 st.title("Echo Bot")
 
 # Initialize chat history
