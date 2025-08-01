@@ -63,6 +63,10 @@ def response_generator():
 
 st.title("AI Chat")
 
+# Clear context button -- ADDED FLAIR :)
+if st.button("🗑️ Clear Context"):
+    st.session_state.messages = []
+
 # Initialize chat history
 if "messages" not in st.session_state:
     st.session_state.messages = []
