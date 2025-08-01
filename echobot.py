@@ -13,10 +13,10 @@ st.markdown("""
     }
     </style>
     <div class="sticky-title">
-        <h1>💬 My Chatbot</h1>
+        <h1>💬 Echo Chatbot</h1>
     </div>
 """, unsafe_allow_html=True)
-st.title("Echo Bot")
+#st.title("Echo Bot")
 
 # Initialize chat history
 if "messages" not in st.session_state:
